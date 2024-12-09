@@ -1,0 +1,9 @@
+The issue was likely caused by missing or conflicting units within the `calc()` expression.  While `vw` is a unit, it's crucial to ensure consistency.  The corrected code ensures that the subtraction involves units that align correctly:
+
+```css
+.element {
+  width: calc(100vw - 20px);
+}
+```
+
+This version explicitly subtracts 20 pixels from 100vw, ensuring the calculation is performed correctly.
