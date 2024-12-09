@@ -1,0 +1,9 @@
+The CSS property `calc()` is not working as expected.  I'm trying to calculate the width of an element based on the viewport width, but the result is incorrect. Here's my code:
+
+```css
+.element {
+  width: calc(100vw - 20px);
+}
+```
+
+I expect the element to be 20 pixels less than the viewport width, but it's not. 
